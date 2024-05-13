@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#input {
+  width: 260px;
+  height: 35px;
+  border: solid;
+  border-width: 1px;
+  border-color: grey;
+  border-radius: 2px;
+  background-color: rgb(245 245 244);
+}

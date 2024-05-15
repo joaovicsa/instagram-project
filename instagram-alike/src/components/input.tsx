@@ -5,6 +5,14 @@ export type InputProps = {
   type: 'password' | 'text'
 }
 
+/**
+ * This component was created to render a box to receive infos about the user to login.
+ * @param {Object} inputProps - object used to define the component props
+ * @param {string} inputProps.description - prop used to show the input box label
+ * @param {'password' | 'text'} inputProps.type - prop used to define the input type. If it's a 'password' type it have a button that reveals the password.
+ * @author João Sá
+ */
+
 export const Input = ({ description, type }: InputProps): JSX.Element => {
   return (
     <>

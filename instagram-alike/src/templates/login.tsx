@@ -1,6 +1,7 @@
 /** @format */
 
 import { Alternatives } from '../components/alternatives'
+import { GetApp } from '../components/getapp'
 import { Input } from '../components/input'
 import { SignUp } from '../components/signup'
 
@@ -25,6 +26,7 @@ function Login() {
         <Alternatives />
       </div>
       <SignUp />
+      <GetApp />
     </div>
   )
 }

@@ -2,7 +2,7 @@
 
 export const ForgotPassword = (): JSX.Element => {
   return (
-    <div>
+    <div className="mb-2">
       <a href="./" className="text-blue-700">
         Esqueceu a senha?
       </a>

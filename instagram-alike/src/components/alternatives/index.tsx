@@ -9,8 +9,10 @@ export const Alternatives = (): JSX.Element => {
   return (
     <>
       <Header />
-      <FacebookButton />
-      <GoogleButton />
+      <div className="flex flex-wrap justify-center items-center gap-2">
+        <FacebookButton />
+        <GoogleButton />
+      </div>
       <ForgotPassword />
     </>
   )

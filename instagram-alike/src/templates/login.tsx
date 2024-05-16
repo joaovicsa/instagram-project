@@ -1,6 +1,6 @@
 /** @format */
 
-import { Alternatives } from '../components/alternatives'
+import { Alternatives } from '../components/alternatives/alternatives'
 import { Input } from '../components/input'
 
 function Login() {
@@ -20,7 +20,7 @@ function Login() {
           </button>
         </div>
       </section>
-      <Alternatives.Root />
+      <Alternatives />
     </div>
   )
 }

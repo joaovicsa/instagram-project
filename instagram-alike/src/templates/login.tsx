@@ -1,10 +1,11 @@
 /** @format */
 
+import { Alternatives } from '../components/alternatives'
 import { Input } from '../components/input'
 
 function Login() {
   return (
-    <div className="container border-gray border-2 w-96 h-[400px] flex items-center flex-wrap">
+    <div className="container border-gray border-2 w-96 h-[400px] flex items-center justify-center flex-wrap">
       <div className="w-full h-28">
         <h1 className="w-full h-full text-5xl text-center">Postgram</h1>
       </div>
@@ -19,6 +20,7 @@ function Login() {
           </button>
         </div>
       </section>
+      <Alternatives />
     </div>
   )
 }

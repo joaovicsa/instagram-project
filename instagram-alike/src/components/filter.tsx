@@ -12,7 +12,9 @@ export type FilterProps = {
 export const Filter = (): JSX.Element => {
   return (
     <div className="relative w-28">
-      <div id="filter" className="w-full border-none">
+      <div
+        id="filter"
+        className={`new_class filterToFireFox z-[9] w-full border-none filter`}>
         <Multiselect
           options={['Português', 'English']}
           isObject={false}
@@ -30,7 +32,7 @@ export const Filter = (): JSX.Element => {
           size={24}
           color="#000000"
           weight="thin"
-          className="absolute right-2 z-[1]"
+          className="absolute top-1 right-2 z-[1]"
         />
       </div>
     </div>

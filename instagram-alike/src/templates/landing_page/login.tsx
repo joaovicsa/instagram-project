@@ -18,7 +18,7 @@ export const Login = (): JSX.Element => {
               <Input description="Telefone, nome de usuário ou email" type="text" />
               <Input description="Senha" type="password" />
             </div>
-            <div className="container flex flex-wrap justify-center">
+            <div className="container flex flex-wrap justify-center pt-2">
               <button
                 className="bg-blue-500 w-64 rounded-md h-8 text-white"
                 type="submit">

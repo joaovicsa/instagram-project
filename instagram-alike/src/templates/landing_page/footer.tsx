@@ -1,11 +1,11 @@
 /** @format */
 
-import { Filter } from '../components/filter'
+import { Filter } from '../../components/filter'
 
 export const Footer = (): JSX.Element => {
   return (
     <footer className="container flex flex-wrap justify-center items-center">
-      <div className="w-[750px]">
+      <div className="w-[750px] text-gray-500">
         <div className="w-full flex flex-wrap justify-around">
           <a href="./">Viyse Creative</a>
           <a href="./">Sobre</a>

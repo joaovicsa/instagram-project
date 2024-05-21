@@ -1,9 +1,9 @@
 /** @format */
 
-import { Alternatives } from '../components/alternatives'
-import { GetApp } from '../components/getapp'
-import { Input } from '../components/input'
-import { SignUp } from '../components/signup'
+import { Alternatives } from '../../components/alternatives'
+import { GetApp } from '../../components/getapp'
+import { Input } from '../../components/input'
+import { SignUp } from '../../components/signup'
 
 export const Login = (): JSX.Element => {
   return (

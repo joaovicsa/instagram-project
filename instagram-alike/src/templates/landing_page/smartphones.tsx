@@ -1,6 +1,6 @@
 /** @format */
 
-import { SlideShow } from '../components/slideshow'
+import { SlideShow } from '../../components/slideshow'
 
 export const Smartphones = (): JSX.Element => {
   return (

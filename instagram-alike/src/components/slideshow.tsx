@@ -41,7 +41,7 @@ export const SlideShow = (): JSX.Element => {
         style={{
           zIndex: 10,
           position: 'fixed',
-          top: 0,
+          top: 100,
           left: '23.33%',
         }}
       />
@@ -56,7 +56,7 @@ export const SlideShow = (): JSX.Element => {
             transition: 'opacity 0.5s ease-in-out',
             opacity: index === currentSlide ? 1 : 0,
             position: 'fixed',
-            top: 0,
+            top: 100,
             left: '33.33%',
             zIndex: 20,
           }}

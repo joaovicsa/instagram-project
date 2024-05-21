@@ -1,18 +1,10 @@
 /** @format */
 
-import { SlideShow } from '../components/slideshow'
-import { Footer } from '../templates/footer'
-import { Login } from '../templates/login'
+import { LandingPage } from '../templates/landing_page'
 import '/src/index.css'
 
 function Postgram() {
-  return (
-    <div id="layout" className="flex flex-wrap justify-center items-center">
-      <SlideShow />
-      <Login />
-      <Footer />
-    </div>
-  )
+  return <LandingPage />
 }
 
 export default Postgram

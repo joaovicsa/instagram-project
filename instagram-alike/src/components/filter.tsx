@@ -16,7 +16,7 @@ export const Filter = (): JSX.Element => {
         id="filter"
         className={`new_class filterToFireFox z-[9] w-full border-none filter`}>
         <Multiselect
-          options={['Português', 'English']}
+          options={['Português', 'English', 'Español']}
           isObject={false}
           onKeyPressFn={function noRefCheck() {}}
           onRemove={function noRefCheck() {}}
@@ -27,12 +27,13 @@ export const Filter = (): JSX.Element => {
           selectionLimit={1}
           hideSelectedList={false}
           hidePlaceholder={true}
+          avoidHighlightFirstOption={false}
         />
         <CaretDown
           size={24}
           color="#000000"
           weight="thin"
-          className="absolute top-1 right-2 z-[1]"
+          className="absolute top-1 right-2 z-[-1]"
         />
       </div>
     </div>

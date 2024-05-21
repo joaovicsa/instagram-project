@@ -19,13 +19,14 @@ export const Input = ({ description, type }: InputProps): JSX.Element => {
       {type === 'text' ? (
         <div
           id="input"
-          className="flex flex-wrap w-64 h-9 border-2 rounded-sm bg-stone-100">
+          className="flex flex-wrap w-64 h-9 border-2 rounded-sm bg-stone-100 overflow-hidden">
           <p className="w-full h-4 text-xs text-gray-500 pl-1">{description}:</p>
           <input
-            className="w-full h-4 bg-stone-100"
+            className="w-[254px] h-[35px] bg-stone-100 text-xs z-10 pl-1 border-b-2 border-r-2 fixed focus:w-full focus:h-4 focus:z-0 focus:relative focus:border-none"
             type="text"
             name="username"
             id="username"
+            placeholder={description}
           />
         </div>
       ) : (
@@ -33,15 +34,16 @@ export const Input = ({ description, type }: InputProps): JSX.Element => {
           <div className="flex flex-wrap ">
             <p className="w-full h-4 text-xs text-gray-500 pl-1">{description}:</p>
             <input
-              className="w-full h-4 bg-stone-100"
+              className="w-[254px] h-[35px] bg-stone-100 text-xs z-10 pl-1 border-b-2 border-r-2 fixed focus:w-full focus:h-4 focus:z-0 focus:relative focus:border-none"
               type="password"
               name="user password"
               id="userpassword"
+              placeholder={description}
             />
           </div>
           <div className="w-fit">
             <button type="submit" className="h-full mx-1 text-slate-700 text-sm">
-              <strong>Ocultar</strong>
+              <strong>Mostrar</strong>
             </button>
           </div>
         </div>

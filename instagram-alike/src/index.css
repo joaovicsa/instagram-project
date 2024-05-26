@@ -4,8 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Adicionado Id para controlar a customização do filtro de anos no gráfico, permitindo que o
-  ícone fique sobreposto ao input, atribuindo a característica de clicável ao mesmo. */
+input::placeholder {
+  width: 100%;
+  height: 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(107 114 128);
+  padding-left: 0.25rem;
+}
 
 input:focus::placeholder {
   color: transparent;

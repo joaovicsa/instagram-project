@@ -28,7 +28,7 @@ export const Login = (): JSX.Element => {
                   descriptionLabel="Telefone, nome de usuário ou email:"
                   typeInput="text"
                   name="username"
-                  className={`w-[254px] h-[35px] bg-stone-100 text-xs z-10 pl-1 border-b-2 border-r-2 fixed focus:w-full focus:h-4 focus:z-0 focus:relative focus:border-none`}
+                  className={`w-[254px] h-[35px] bg-stone-100 text-xs z-10 pl-1 border-b-2 border-r-2 fixed focus:w-full focus:h-4 focus:z-0 focus:relative focus:border-none focus:outline-none focus:shadow-none`}
                   placeholder="Telefone, nome de usuário ou email:"
                 />
               </LoginInput.Root>
@@ -39,7 +39,7 @@ export const Login = (): JSX.Element => {
                   descriptionLabel="Senha:"
                   typeInput={`${showPassword ? 'text' : 'password'}`}
                   name="userpassword"
-                  className={`w-[254px] h-[35px] bg-stone-100 text-xs z-10 pl-1 border-b-2 border-r-2 fixed focus:w-full focus:h-4 focus:z-0 focus:relative focus:border-none `}
+                  className={`w-[254px] h-[35px] bg-stone-100 text-xs z-10 pl-1 border-b-2 border-r-2 fixed focus:w-full focus:h-4 focus:z-0 focus:relative focus:border-none focus:outline-none focus:shadow-none `}
                   placeholder="Senha:"
                   onClick={() => setShowPassword(!showPassword)}
                   visibleLabel={`${showPassword ? 'Ocultar' : 'Mostrar'}`}

@@ -17,11 +17,9 @@ export const Userpassword = ({
   const label = !descriptionLabel ? placeholder : descriptionLabel
 
   const showorhide =
-    value?.length === 0 || value === ' '
+    value?.length === 0 
       ? 'invisible absolute top-[300px] right-[30.5%] z-10 w-fit h-16 cursor-pointer'
       : 'visible absolute top-[300px] right-[30.5%] z-10 w-fit h-16 cursor-pointer'
-
-  console.log(value?.length)
 
   return (
     <>

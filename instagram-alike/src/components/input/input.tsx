@@ -19,8 +19,8 @@ export type InputProps = {
 /**
  * This component was created to render a box to receive infos about the user to login.
  * @param {Object} inputProps - object used to define the component props
- * @param {string} inputProps.description - prop used to show the input box label
- * @param {'password' | 'text'} inputProps.type - prop used to define the input type. If it's a 'password' type it have a button that reveals the password.
+ * @param {ReactNode} inputProps.children - prop that receives a ReactNode to render inside the input container box.
+ * @param {string} inputProps.className - prop used to define the style of input.
  * @author João Sá
  */
 

@@ -3,3 +3,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input::placeholder {
+  width: 100%;
+  height: 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgb(107 114 128);
+  padding-left: 0.25rem;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.new_class .optionListContainer {
+  max-height: 120px;
+}
+.new_class .optionListContainer ul {
+  max-height: 120px;
+}
+
+#filter .multiselect-container .search-wrapper {
+  width: 100%;
+}
+
+#filter .multiselect-container .search-wrapper input {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  text-align: start;
+}
+
+.multiselect-container .search-wrapper {
+  min-height: 32px;
+  max-height: 32px;
+
+  border: none;
+  border-radius: 0;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.multiselect-container .search-wrapper input {
+  margin: 0;
+  height: 32px;
+  width: 100%;
+  overflow: scroll;
+}
+
+.multiselect-container .search-wrapper .chip {
+  margin: 2px 0;
+  margin-right: 5px;
+  padding-left: 1rem;
+}
+
+.multiselect-container .search-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.filterToFireFox .multiselect-container .search-wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}

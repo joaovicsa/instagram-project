@@ -15,9 +15,9 @@ export const Login = (): JSX.Element => {
   }
 
   return (
-    <div id="upper-right" className="mt-28">
+    <div id="upper-right" className="xl:mt-28 lg:mt-12 md:mt-6">
       <div className="w-96 flex flex-wrap gap-2">
-        <div className="border-gray border-2 w-96 h-[470px] flex items-center justify-center flex-wrap">
+        <div className="md:border-gray md:border-2 w-96 h-[470px] flex items-center justify-center flex-wrap">
           <div className="w-full h-28 flex justify-center items-center">
             <h1 className="w-full text-5xl text-center">Postgram</h1>
           </div>

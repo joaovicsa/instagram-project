@@ -8,8 +8,8 @@ interface Slide {
 }
 
 const slides: Slide[] = [
-  { src: '../media/bgsmartphoneback.png', className: 'z-20' },
-  { src: '../media/bgsmartphonehome.png', className: 'z-20' },
+  { src: '../media/bgsmartphoneback.png', className: 'z-20 invisible lg:visible' },
+  { src: '../media/bgsmartphonehome.png', className: 'z-20 invisible lg:visible' },
   // Add more slides here...
 ]
 
@@ -33,16 +33,46 @@ export const SlideShow = (): JSX.Element => {
     setAnimating(false)
   }
 
+  const isMobile = window.innerWidth < 1024
+  const isDesktop = window.innerWidth >= 1024 && window.innerWidth < 1440
+
+  const imageStyleRight = isMobile
+    ? {
+        left: '25%',
+      }
+    : isDesktop
+    ? {
+        left: '19%',
+        top: 40,
+      }
+    : {
+        left: '33,33%',
+        top: 100,
+      }
+  const imageStyleLeft = isMobile
+    ? {
+        left: '25%',
+      }
+    : isDesktop
+    ? {
+        left: '10%',
+        top: 40,
+      }
+    : {
+        left: '23.33%',
+        top: 100,
+      }
+
   return (
     <div className="w-[500px] flex justify-end relative">
       <img
         src="../media/bgsmartphoneexplore.png"
-        className="z-10 absolute left-1/3"
+        className="z-10 absolute left-1/3 invisible lg:visible"
         style={{
           zIndex: 10,
           position: 'fixed',
-          top: 100,
-          left: '23.33%',
+
+          ...imageStyleLeft,
         }}
       />
       {slides.map((slide, index) => (
@@ -57,8 +87,8 @@ export const SlideShow = (): JSX.Element => {
             opacity: index === currentSlide ? 1 : 0,
             position: 'fixed',
             top: 100,
-            left: '33.33%',
             zIndex: 20,
+            ...imageStyleRight,
           }}
         />
       ))}
